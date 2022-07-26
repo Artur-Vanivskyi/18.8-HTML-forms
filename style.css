@@ -1,0 +1,26 @@
+body{
+  padding: 5px;
+}
+
+input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+textarea{
+  width: 50%;
+  height: 150px;
+}
+
+button{
+  margin-top: 10px;
+}
+
+fieldset {
+  width:50%;
+}

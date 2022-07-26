@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <div>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+              <label for="first name">First name:</label>
+              <input
+                id="first name"
+                type="text"
+                name="first name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div>
+              <label for="last name">Last name:</label>
+              <input
+                id="last name"
+                type="text"
+                name="last name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div>
+              <label for="date of birth">Date of Birth:</label>
+              <input
+                id="date of birth"
+                type="text"
+                name="date of birth"
+                placeholder="xx/xx/xxxx"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Phone #:</label>
+              <input
+                id="phone"
+                type="text"
+                name="phone"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                placeholder="xxx-xxx-xxxx"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Preferred domain name</legend>
+            <div>
+              <input id="gmail" name="domain" type="radio" value="gmail" />
+              <label for="gmail">gmail.com</label>
+            </div>
+            <div>
+              <input id="yahoo" name="domain" type="radio" value="yahoo" />
+              <label for="yahoo">yahoo.com</label>
+            </div>
+            <div>
+              <input
+                id="thinkful"
+                name="domain"
+                type="radio"
+                value="thinkful"
+              />
+              <label for="thinkful">thinkful.com</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div>
+          <label for="form-message">Your message</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            maxlength="150"
+            placeholder="Provide additional information"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
